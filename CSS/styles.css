@@ -83,6 +83,28 @@ h3 {
   font-size: 1.75rem;
 }
 
+.hero-card {
+  background-color: var(--white);
+  padding: 40px;
+}
+
+.hero-card img {
+ display: block;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.button {
+  background-color: var(--vegan);
+  display: inline;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
 @media (min-width: 650px) {
 header {
   justify-content: center;
@@ -91,6 +113,21 @@ header {
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+.hero-card  {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.hero-img { 
+width: 50%;
+height: 500px;
+}
+
+.hero-text {
+  padding: 1rem;
 }
 
 h1 {
@@ -102,9 +139,24 @@ h1 {
  header {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
+ }
+
+ .logo {
+  margin: 0
  }
 
  nav ul {
   margin: 0;
+ }
+
+ .hero-card img {
+  max-width: 23%; 
+ }
+
+ .hero-card {
+  padding: 3rem;
+  margin: 0;
+  padding: 0;
  }
 }

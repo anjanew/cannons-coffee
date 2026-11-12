@@ -97,6 +97,10 @@ h3 {
  display: block;
 }
 
+.hero-card .button {
+  background-color: var(--vegan);
+}
+
 a {
   text-decoration: none;
   text-transform: uppercase;
@@ -104,12 +108,34 @@ a {
 }
 
 .button {
-  background-color: var(--vegan);
-  display: inline;
+  display: inline-block;
   border-radius: 5px;
   padding: 0.5rem;
+  text-align: center;
 }
 
+.card-container {
+  background-color: var(--light-blue);
+  padding: 2rem;
+}
+
+.card-container h2 {
+  text-transform: uppercase;
+}
+
+.card-container .button {
+  background-color: var(--catalina);
+}
+
+.card img {
+  border-radius: 10px;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+/* START OF MEDIA QUERIES */
 @media (min-width: 650px) {
 header {
   justify-content: center;
@@ -122,10 +148,6 @@ header {
     gap: 1rem;
 }
 
-h1 {
-  padding-top: 1rem;
-}
-
 .hero-card  {
   display: flex;
   align-items: center;
@@ -133,12 +155,22 @@ h1 {
 }
 
 .hero-card img { 
-width: 50%;
 height: 500px;
 }
 
 .hero-text {
   padding: 1rem;
+  width: 50%;
+}
+
+.coffee-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  width: calc((100% - 2rem) / 2);
 }
 }
 
@@ -162,4 +194,8 @@ height: 500px;
   margin: 0;
   padding: 0;
  }
+
+.card {
+  width: calc((100% - 4rem) / 4);
+}
 }

@@ -131,6 +131,19 @@ a {
   border-radius: 10px;
 }
 
+.latte-card {
+  background-color: var(--white);
+  padding: 40px;
+}
+
+.latte-card img {
+  display: block;
+}
+
+.latte-card .button {
+  background-color: var(--vegan);
+}
+
 h3 {
   font-weight: bold;
 }
@@ -186,6 +199,25 @@ height: 500px;
   width: calc((100% - 2rem) / 2);
 }
 
+.latte-card {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.latte-card img { 
+margin-top: 2rem;
+margin-bottom: 2rem;
+padding: 0;
+width: 50%;
+}
+
+.latte-text {
+  padding: 1rem;
+  width: 50%;
+  margin-left: 1rem;
+}
 }
 
 @media (min-width: 1000px) {
@@ -213,4 +245,10 @@ height: 500px;
   width: calc((100% - 4rem) / 4);
 }
 
+.latte-card img { 
+padding: 0;
+width: 50%;
+margin-top: 0;
+margin-bottom: 0;
+}
 }
